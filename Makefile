@@ -6,12 +6,11 @@
 #    By: ksainte <ksainte@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/17 18:22:40 by ksainte           #+#    #+#              #
-#    Updated: 2024/05/17 18:22:41 by ksainte          ###   ########.fr        #
+#    Updated: 2024/05/18 16:49:56 by ksainte          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-# ATTENTION POUR LE DEBUGGER IL FAUT UN -G3 DANS LE CSS! ENLEVER POUR LA CORR
-CC = gcc -g3
+CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 SRCS_1 = src/push_swap/main.c
 SRCS_2 = src/push_swap/calculate_b.c \
