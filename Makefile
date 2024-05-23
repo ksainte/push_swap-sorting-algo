@@ -6,11 +6,11 @@
 #    By: ksainte <ksainte@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/17 18:22:40 by ksainte           #+#    #+#              #
-#    Updated: 2024/05/18 16:49:56 by ksainte          ###   ########.fr        #
+#    Updated: 2024/05/23 16:15:03 by ksainte          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = gcc
+CC = gcc -g3
 CFLAGS = -Wall -Wextra -Werror
 SRCS_1 = src/push_swap/main.c
 SRCS_2 = src/push_swap/calculate_b.c \
@@ -50,3 +50,7 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re bonus
+
+#-lft: Links with the libft library. The -lft flag tells the compiler to link with libft.a (the lib prefix and .a suffix are assumed).
+
+

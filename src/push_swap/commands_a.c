@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   commands_a.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ks19 <ks19@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: ksainte <ksainte@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:09:21 by ks19              #+#    #+#             */
-/*   Updated: 2024/05/16 10:09:56 by ks19             ###   ########.fr       */
+/*   Updated: 2024/05/23 16:05:22 by ksainte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,12 @@ void	ft_ra(t_stack **a, int j)
 	if (j == 0)
 		write(1, "ra\n", 3);
 }
+
+//imaginons une stack 3 1 2 4
+//*a  = last : *a devient alors &4
+//(*a)->next fait de *a une liste circulaire. &4 pointe desormais sur &3 tell que 3 1 2 4->
+//*a = tmp->next fait de *a une liste tell que 1 2 4 3-> (->meaning tjrs circulaire)
+//tmp->next = NULL coupe la liste circulaire, &3 pointe desormais sur NULL, on a desormais 1 2 4 3
 
 // pa (push a) : take the first element at the top of b and
 // put it at the top of a. Do nothing if b is empty.

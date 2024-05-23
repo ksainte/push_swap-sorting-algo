@@ -6,7 +6,7 @@
 /*   By: ksainte <ksainte@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 10:37:17 by ks19              #+#    #+#             */
-/*   Updated: 2024/05/18 15:16:54 by ksainte          ###   ########.fr       */
+/*   Updated: 2024/05/23 16:11:26 by ksainte          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,21 +93,21 @@ if (a)
              current = current->next;
      }
     }
-    int i = 0;
-    if (a)
-    {
-     printf("Checking if everyting is in ascending order...\n");
-     t_stack *current1 = a;
-     while (current1!= NULL && current1->next->nbr > current1->nbr)
-     {
-         i++;
-             current1 = current1->next;
-             if (current1->next == NULL){
-                 break ;
-             }
-     }
-     printf("Everything is ok if i is %d!\n", i);
-    }
+//     int i = 0;
+//     if (a)
+//     {
+//      printf("Checking if everyting is in ascending order...\n");
+//      t_stack *current1 = a;
+//      while (current1!= NULL && current1->next->nbr > current1->nbr)
+//      {
+//          i++;
+//              current1 = current1->next;
+//              if (current1->next == NULL){
+//                  break ;
+//              }
+//      }
+//      printf("Everything is ok if i is %d!\n", i);
+//     }
 
 	ft_free(&a);
 	return (0);
